@@ -36,5 +36,5 @@ PRODUCT_AAPT_CONFIG := normal mdpi
 PRODUCT_AAPT_PREF_CONFIG := mdpi
 
 ## Inherit overlays
-$(call inherit-product, device/mdpi-common/mdpi.mk)
+$(call inherit-product-if-exists, device/mdpi-common/mdpi.mk)
 DEVICE_PACKAGE_OVERLAYS += device/samsung/cooper/overlay
